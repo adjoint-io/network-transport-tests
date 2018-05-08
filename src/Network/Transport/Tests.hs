@@ -1046,7 +1046,7 @@ testTransport :: IO (Either String Transport) -> IO ()
 testTransport newTransport = do
   Right transport <- newTransport
   runTests
-    [ ("PingPong",              testPingPong transport numPings)
+    [ ("PingPong",              testPingPong transport 1000)
     , ("EndPoints",             testEndPoints transport numPings)
     , ("Connections",           testConnections transport numPings)
     , ("CloseOneConnection",    testCloseOneConnection transport numPings)
