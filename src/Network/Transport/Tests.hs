@@ -1052,7 +1052,7 @@ testTransport newTransport = do
     , ("CloseOneConnection",    testCloseOneConnection transport numPings)
     , ("CloseOneDirection",     testCloseOneDirection transport numPings)
     , ("CloseReopen",           testCloseReopen transport numPings)
-    , ("ParallelConnects",      testParallelConnects transport numPings)
+    , ("ParallelConnects",      testParallelConnects transport 500)
     , ("SelfSend",              testSelfSend transport)
     , ("SendAfterClose",        testSendAfterClose transport 100)
     , ("Crossing",              testCrossing transport 10)
