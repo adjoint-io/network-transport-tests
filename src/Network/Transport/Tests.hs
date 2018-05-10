@@ -1068,7 +1068,7 @@ testTransport newTransport = do
     , ("Kill",                  testKill newTransport 1000)
     ]
   where
-    numPings = 10000 :: Int
+    numPings = 5000 :: Int
 
 
 -- Test that list is a union of stream message, with preserved ordering
